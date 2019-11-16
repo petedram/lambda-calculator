@@ -1,6 +1,6 @@
 import React from "react";
 import { operators } from '../../../data';
-import OperatorButton from '../OperatorButtons/OperatorButton';
+import { OperatorButton } from '../OperatorButtons/OperatorButton';
 
 
 
@@ -8,7 +8,7 @@ import OperatorButton from '../OperatorButtons/OperatorButton';
 
 //Import your array data to from the provided data file
 
-const Operators = () => {
+export const Operators = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>
@@ -22,4 +22,3 @@ const Operators = () => {
   );
 };
 
-export default Operators
