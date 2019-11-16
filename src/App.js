@@ -30,12 +30,12 @@ function App() {
       <Logo />
       <Display />
       <div className="App">
-
-        <Numbers /> 
-        {/* key='something unique' */}
-        <Operators />
-        <Specials />
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+          <Specials />      
+          <Operators />
+          <Numbers /> 
+          
+          {/* key='something unique' */}
+          {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>
   );

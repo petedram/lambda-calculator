@@ -10,8 +10,7 @@ export const Specials = () => {
   // STEP 2 - add the imported data to state
 
   return (
-    <div>
-      <SpecialButton special='S' />
+    <div className='specialsContainer'>
       {console.log('specials'+ specials)}
       {specials.map((item) => {
             return (
