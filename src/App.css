@@ -20,3 +20,16 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+  .numButton {
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: darkblue;
+    box-shadow: 1px 1px #322c2d;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
