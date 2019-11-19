@@ -1,7 +1,7 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
@@ -26,11 +26,8 @@
   }
 
   .App {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
+    width: 450px;
+    padding-top: 20px;
   }
 
 
@@ -51,6 +48,9 @@
     background-color: #184379;
   }
 
+  .numsButton:nth-child(10) { width:185px; }
+
+
   .specialsButton {
     background-color: #225d9d;
   }
@@ -59,3 +59,21 @@
     background-color: #247293;
   }
 
+  .left {
+    width: 335px;
+    display: inline-flex;
+    float: left;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+
+  .right {
+    width: 100px;
+    display:inline-flex;
+    /* float: right; */
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+
+
+  

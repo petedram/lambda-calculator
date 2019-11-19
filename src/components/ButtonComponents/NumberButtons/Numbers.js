@@ -11,16 +11,19 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
+export function buttonPress (item) {
+  console.log(item);
+}
+
 export const Numbers = () => {
   // STEP 2 - add the imported data to state
-  const [data, setData] = useState(10);
-  console.log(data);
+  const [dataNum, setDataNum] = useState(0);
   console.log(numbers);
   return (
     <div>
         {numbers.map((item) => {
             return (
-              <NumberButton number={item} />
+              <NumberButton number={item} onClick={buttonPress(item)} key={Math.random()} />
             )
           })
         }
@@ -39,4 +42,3 @@ export const Numbers = () => {
     </div>
   );
 };
-

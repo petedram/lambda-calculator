@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { operators } from '../../../data';
 import { OperatorButton } from '../OperatorButtons/OperatorButton';
 
@@ -10,11 +10,13 @@ import { OperatorButton } from '../OperatorButtons/OperatorButton';
 
 export const Operators = () => {
   // STEP 2 - add the imported data to state
+  const [dataOp, setDataOp] = useState(0);
+
   return (
     <div className='operatorsContainer'>
       {operators.map((item) => {
             return (
-              <OperatorButton operator={item.value} />
+              <OperatorButton operator={item.value} key={Math.random()} />
             )
           })
         }

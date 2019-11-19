@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { specials } from '../../../data';
 import { SpecialButton } from '../SpecialButtons/SpecialButton'
 
@@ -8,13 +8,15 @@ import { SpecialButton } from '../SpecialButtons/SpecialButton'
 
 export const Specials = () => {
   // STEP 2 - add the imported data to state
+  const [dataSp, setDataSp] = useState(0);
+
 
   return (
     <div className='specialsContainer'>
       {console.log('specials'+ specials)}
       {specials.map((item) => {
             return (
-              <SpecialButton special={item} />
+              <SpecialButton special={item} key={Math.random()} />
             )
           })
         }
